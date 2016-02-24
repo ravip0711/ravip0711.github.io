@@ -1,1 +1,71 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Ravi's Work Website</title>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script type="text/javascript" src="javascript/site.js"></script>
+</head>
+<body>
+  <div id="container">
+    <div id="header">
+      <h1>Ravi's Work Website <span id="beta-title">(beta)</span></h1>
+    </div>
+  <div id="content">
+    <nav id="nav-bar">
+      <ul>
+        <li><a class="selected">Home</a></li>
+        <!-- <li>About Me</li>
+        <li>Personal Blog</li>
+        <li>Contact Me</li> -->
+      </ul>
+    </nav>
+    <div id="content-section">
+      <div id="section-title">
+        <h3>Welcome, this is my work site to display my projects and things I have learned from them. The project names are linked to the github repositories, and any running on a server will be the link below it. Enjoy!</h3>
+      </div>
+      <hr>
+      <div id="section-body">
+        <ul>
+          <li>
+            <h4><a href="https://github.com/ravip0711/loyalty">Loyalty Points</a></h4>
+            <h5><a href="https://loyalty-app.herokuapp.com/">loyalty-app.herokuapp.com</a></h5>
+            <p>Currently working on this app for creating a phone number based loyalty rewards system for customers to earn points/rewards at a retail business. Building the app via Test Driven Development with integration tests using Rspec and Capybara. Solidified more knowledge with routing. I am using bootstrap for the front-end. Did use the activeadmin gem, but later took it off because I wanted to learn and create a simplier admin dashboard. Additional features I am looking to build is an admin feature that allows admins to add points to the customer and for customer to use their earned points/rewards.</p>
+          </li>
+          <li>
+            <h4><a href="https://github.com/ravip0711/photogram">Photogram</a></h4>
+            <p>Fun app project making a clone of Instagram. Learned how to use Test Driven Development with Rspec and Capybara, focusing on integration tests, to build out Instagram features. Learned how to use the Devise gem for authentication. Solidified knowledge regarding Rails back-end code placement. Learned how to manipulating the front-end with the bootstrap framework and use Sassy CSS. Also learned to AJAX and create a pagination with the Kaminari gem.</p>
+          </li>
+          <li>
+            <h4><a href="https://github.com/ravip0711/kittens_app">Kittens App</a></h4>
+            <p>Created a basic CRUD App in Rails, then learned how to use the Flickr API to get pictures from my own Flickr profile and more importantly kittens.</p>
+          </li>
+          <li>
+            <h4><a href="https://github.com/bobolinks-2014/trailhead">Trail Head App</a></h4>
+            <h5><a href="http://trailheaddbc.herokuapp.com/">trailheaddbc.herokuapp.com</a></h5>
+            <p>My Dev Bootcamp Final 7 Day project in Rails - Trail Head is a hiking trail finder using Google Maps API and Trail API to give you hiking points all around the United States. Click on a trail to open up the specific trail's page giving you a chance to upload pictures and leave comments. Another feature that was developed was to be able to add new trail points to the map. Learned many things like how to build out a photo carousel and using carrier wave to upload pictures. Then being able to save the pictures to an Amazon S3 Server (finally without compromising the server key). Learned how to use CodeShip for continuous intergration/deployment to Heroku.</p>
+          </li>
+          <li>
+            <h4><a href="https://github.com/bobolinks-2014/Amozin">Amozin App</a></h4>
+            <p>My Dev Bootcamp 5 day project in Rails - Amozin is a Amazon clone making it a basic e-commerce site with a few features: shopping carts, reviews, and user authentications. Learned a lot about sessions and use authentication.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <footer id="site-footer">
+    <ul>
+      <li><a href="http://www.linkedin.com/in/ravip0711">LinkedIn</a></li>
+      |
+      <li><a href="http://www.github.com/ravip0711">Github</a></li>
+      | 
+      <li><a href="http://www.twitter.com/ravip0711">Twitter</a></li>
+    </ul>
+    <p>Ravi Patel &copy; 2016</p>
+  </footer>
+  </div>
+</body>
+</html>

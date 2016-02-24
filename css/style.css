@@ -1,0 +1,95 @@
+body {
+  background-image: url("../images/lodyas.png");
+  /*background-color: #99ccff;*/
+  font-family: Georgia, serif;
+}
+
+a {
+  text-decoration: none;
+  color: #4da6ff;
+}
+
+#container {
+  background-color: #f2f2f2;
+  width: 90%;
+  margin: 0 auto;
+  height: 100%;
+}
+
+#header {
+  /*background-color: #808080;*/
+  background-image: url("../images/lodyas.png");
+  color: #f2f2f2;
+  font-size: 50px;
+  text-align: center;
+  height: 100%;
+  padding: 5px 0;
+}
+
+#beta-title {
+  font-size: 14px;
+}
+
+#content {
+  padding: 10px;
+  min-height: 95%;
+}
+
+#nav-bar {
+  width: 15%;
+  float: left;
+}
+
+#nav-bar ul li {
+  padding: 5% 5%;
+}
+
+#content-section {
+  width: 80%;
+  float: right;
+}
+
+#section-title {
+  padding: 20px 40px;
+  text-align: center;
+}
+
+#section-body ul li {
+  padding: 20px 0;
+}
+
+#section-body ul li h4 {
+  padding-bottom: 5px;
+}
+#section-body ul li h5 {
+  padding-bottom: 5px;
+  padding-left: 10px;
+}
+
+#section-body ul li p {
+  padding-left: 20px;
+}
+
+#site-footer {
+  clear: both;
+  padding: 10px;
+  background-image: url("../images/lodyas.png");
+  text-align: center;
+}
+
+#site-footer ul {
+  color: #808080;
+}
+
+#site-footer ul li {
+  display: inline-block;
+  padding: 5px;
+}
+
+#site-footer p {
+  color: #808080;
+}
+
+#nav .selected {
+  font-weight: bold;
+}
