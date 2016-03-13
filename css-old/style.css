@@ -8,6 +8,9 @@ a {
   text-decoration: none;
   color: #4da6ff;
 }
+a:hover{
+  text-shadow: 1px 1px #666666;
+}
 
 #container {
   background-color: #f2f2f2;

@@ -2,70 +2,134 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Ravi's Work Website</title>
-  <link rel="stylesheet" type="text/css" href="css/normalize.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <script type="text/javascript" src="javascript/site.js"></script>
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
+
 </head>
 <body>
-  <div id="container">
-    <div id="header">
-      <h1>Ravi's Work Website <span id="beta-title">(beta)</span></h1>
-    </div>
-  <div id="content">
-    <nav id="nav-bar">
-      <ul>
-        <li><a class="selected">Home</a></li>
-        <li><a href="#">About Me</a></li>
-        <li><a href="#">Personal Blog</a></li>
-        <li><a href="#">Contact Me</a></li>
-      </ul>
-    </nav>
-    <div id="content-section">
-      <div id="section-title">
-        <h3>Welcome, this is my work site to display my projects and things I have learned from them. The project names are linked to the github repositories, and any running on a server will be the link below it. Enjoy!</h3>
+
+  <!-- navigation -->
+  <nav class="navbar navbar-default">
+    <div id="container-fluid">
+      <div class="navbar-header">
+        <button class="navbar-toggle collapsed" data-target="#bs-navbar-collapse-1" data-toggle="collapse" type="button">
+        <span class="sr-only">Toggle Navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+        <a class="navbar-brand" href="#">
+          <img id="logo" class="img-responsive" alt="ravi-logo" src="images/r_logo.png">
+        </a>
       </div>
-      <hr>
-      <div id="section-body">
-        <ul>
-          <li>
-            <h4><a href="https://github.com/ravip0711/loyalty">Loyalty Points</a></h4>
-            <h5><a href="https://loyalty-app.herokuapp.com/">loyalty-app.herokuapp.com</a></h5>
-              <p>Currently working on this app for creating a phone number based loyalty rewards system for customers to earn points/rewards at a retail business. Building the app via Test Driven Development with integration tests using Rspec and Capybara. Solidified more knowledge with routing. I am using bootstrap for the front-end. Did use the activeadmin gem, but later took it off because I wanted to learn and create a simplier admin dashboard. Additional features I am looking to build is an admin feature that allows admins to add points to the customer and for customer to use their earned points/rewards.</p>
-          </li>
-          <li>
-            <h4><a href="https://github.com/ravip0711/photogram">Photogram</a></h4>
-              <p>Fun app project making a clone of Instagram. Learned how to use Test Driven Development with Rspec and Capybara, focusing on integration tests, to build out Instagram features. Learned how to use the Devise gem for authentication. Solidified knowledge regarding Rails back-end code placement. Learned how to manipulating the front-end with the bootstrap framework and use Sassy CSS. Also learned to AJAX and create a pagination with the Kaminari gem.</p>
-          </li>
-          <li>
-            <h4><a href="https://github.com/ravip0711/kittens_app">Kittens App</a></h4>
-              <p>Created a basic CRUD App in Rails, then learned how to use the Flickr API to get pictures from my own Flickr profile and more importantly kittens.</p>
-          </li>
-          <li>
-            <h4><a href="https://github.com/bobolinks-2014/trailhead">Trail Head App</a></h4>
-            <h5><a href="http://trailheaddbc.herokuapp.com/">trailheaddbc.herokuapp.com</a></h5>
-              <p>My Dev Bootcamp Final 7 Day project in Rails - Trail Head is a hiking trail finder using Google Maps API and Trail API to give you hiking points all around the United States. Click on a trail to open up the specific trail's page giving you a chance to upload pictures and leave comments. Another feature that was developed was to be able to add new trail points to the map. Learned many things like how to build out a photo carousel and using carrier wave to upload pictures. Then being able to save the pictures to an Amazon S3 Server (finally without compromising the server key). Learned how to use CodeShip for continuous intergration/deployment to Heroku.</p>
-          </li>
-          <li>
-            <h4><a href="https://github.com/bobolinks-2014/Amozin">Amozin App</a></h4>
-              <p>My Dev Bootcamp 5 day project in Rails - Amozin is a Amazon clone making it a basic e-commerce site with a few features: shopping carts, reviews, and user authentications. Learned a lot about sessions and use authentication.</p>
-          </li>
+      <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="#">About Me</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Github</a></li>
+          <li><a href="#">LinkedIn</a></li>
         </ul>
       </div>
     </div>
+  </nav>
 
+  <!-- intro -->
+  <div class="jumbotron text-center">    
+      <h1>Ravi's Work Website <span class="small">(beta)</span></h1>
+        <h3>Welcome, this is my work site to display my projects and things I have learned from them. The project names are linked to the github repositories, and any running on a server will be the link below it. Enjoy!</h3>
   </div>
 
-  <footer id="site-footer">
-    <ul>
-      <li><a href="http://www.linkedin.com/in/ravip0711">LinkedIn</a></li>
-      |
-      <li><a href="http://www.github.com/ravip0711">Github</a></li>
-      | 
-      <li><a href="http://www.twitter.com/ravip0711">Twitter</a></li>
-    </ul>
-    <p>Ravi Patel &copy; 2016</p>
+      <!-- content sections -->
+
+  <div class="row">
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <img src="https://images.unsplash.com/photo-1450284375521-e8e6f81447eb?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=5f9b6d96bbb6bfbb4bf4f0902ef05af5" alt="...">
+        <div class="caption">
+          <h3>Loyalty Points</h3>
+          <p>Currently working on this app for creating a phone number based loyalty rewards system for customers to earn points/rewards at a retail business. Building the app via Test Driven Development with integration tests using Rspec and Capybara. Solidified more knowledge with routing. I am using bootstrap for the front-end. Did use the activeadmin gem, but later took it off because I wanted to learn and create a simplier admin dashboard. Additional features I am looking to build is an admin feature that allows admins to add points to the customer and for customer to use their earned points/rewards.</p>
+          <p>
+            <a href="https://loyalty-app.herokuapp.com/" class="btn btn-primary" role="button">Website</a>
+            <a href="https://github.com/ravip0711/loyalty" class="btn btn-default" role="button">Github</a>
+          </p>
+        </div>
+      </div>
+    </div>
+     <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <img src="https://images.unsplash.com/photo-1439219970881-3727d2e3402a?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=e01462b3346189748979d94d98501cc9" alt="...">
+        <div class="caption">
+          <h3>Photogram</h3>
+          <p>Fun app project making a clone of Instagram. Learned how to use Test Driven Development with Rspec and Capybara, focusing on integration tests, to build out Instagram features. Learned how to use the Devise gem for authentication. Solidified knowledge regarding Rails back-end code placement. Learned how to manipulating the front-end with the bootstrap framework and use Sassy CSS. Also learned to AJAX and create a pagination with the Kaminari gem.</p>
+          <p>
+            <a href="https://github.com/ravip0711/photogram" class="btn btn-default" role="button">Github</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <img src="https://images.unsplash.com/photo-1445499348736-29b6cdfc03b9?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=0c98225393f792b7b58e4fe2d3fe1644" alt="...">
+        <div class="caption">
+          <h3>Kittens App</h3>
+          <p>Created a basic CRUD App in Rails, then learned how to use the Flickr API to get pictures from my own Flickr profile and more importantly kittens.</p>
+          <p>
+            <a href="https://github.com/ravip0711/kittens_app" class="btn btn-default" role="button">Github</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <img src="https://images.unsplash.com/9/sander-zelhem-green-passage.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=328c031012e49ece942031c49cd7ab6d" alt="...">
+        <div class="caption">
+          <h3>Trail Head App</h3>
+          <p>My Dev Bootcamp Final 7 Day project in Rails - Trail Head is a hiking trail finder using Google Maps API and Trail API to give you hiking points all around the United States. Click on a trail to open up the specific trail's page giving you a chance to upload pictures and leave comments. Another feature that was developed was to be able to add new trail points to the map. Learned many things like how to build out a photo carousel and using carrier wave to upload pictures. Then being able to save the pictures to an Amazon S3 Server (finally without compromising the server key). Learned how to use CodeShip for continuous intergration/deployment to Heroku.</p>
+           <p>
+            <a href="http://trailheaddbc.herokuapp.com/" class="btn btn-primary" role="button">Website</a>
+            <a href="https://github.com/bobolinks-2014/trailhead" class="btn btn-default" role="button">Github</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <img src="https://images.unsplash.com/photo-1443884590026-2e4d21aee71c?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=616f93352e28576b7ad4bfdfcbad6d84" alt="...">
+        <div class="caption">
+          <h3>Amozin App</h3>
+          <p>My Dev Bootcamp 5 day project in Rails - Amozin is a Amazon clone making it a basic e-commerce site with a few features: shopping carts, reviews, and user authentications. Learned a lot about sessions and use authentication.</p>
+           <p>
+            <a href="https://github.com/bobolinks-2014/Amozin" class="btn btn-default" role="button">Github</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- footer -->
+  <footer id="footer" class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="inline">
+        <a href="http://www.linkedin.com/in/ravip0711">LinkedIn</a>
+        |
+        <a href="http://www.github.com/ravip0711">Github</a>
+        | 
+        <a href="http://www.twitter.com/ravip0711">Twitter</a>
+      </div>
+      <div class="inline">
+        <p class="text-muted text-right">Ravi Patel &copy; 2016</p>
+      </div>
+    </div>
   </footer>
-  </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
