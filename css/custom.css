@@ -14,22 +14,66 @@ body {
   padding-top: 20px;
   padding-left: 20px;
   padding-right: 20px;
+  background-color: #253138;
+}
+
+h3 {
+  color: #318DC3;
+}
+
+.btn-primary {
+  background-color: #318DC3;
+}
+
+.btn-primary:hover {
+  background-color: #253138;
+}
+
+.btn-default:hover {
+  color: white;
+  background-color: #253138;
+}
+
+nav a {
+  color: #F0F9FF;
+  background-color: #F0F9FF;
 }
 
 .navbar {
-  background-color: lightblue;
+  background-color: #318DC3;
+  border: none;
 }
 
 .jumbotron {
   padding: 30px;
+  background-color: #F0F9FF;
+}
+
+.thumbnail {
+  background-color: #F0F9FF;
+}
+
+.thumbnail img {
+  object-fit: cover;
+}
+
+.thumbnail p {
+  color: #253138;
 }
 
 #footer {
-  bottom: 0;
-  margin-top: 30px
+  background-color: #318DC3;
 }
 
-.media-object {
-  width: 100px;
-  height: 100px;
+#footer a {
+  color: #F0F9FF;
+}
+
+.footer-info {
+  padding-top: 5px;
+}
+
+p.text-muted {
+  margin-bottom: 0;
+  color: #FFF;
 }
