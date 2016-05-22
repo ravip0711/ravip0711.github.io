@@ -65,6 +65,12 @@ h3 {
   margin: 0px 0px 30px 0px;
 }
 
+.posts:hover {
+  -webkit-box-shadow: 0px 0px 19px 7px rgba(119,119,119,1);
+  -moz-box-shadow: 0px 0px 19px 7px rgba(119,119,119,1);
+  box-shadow: 0px 0px 19px 7px rgba(119,119,119,1);
+}
+
 .clear-left {
   clear: left;
 }
