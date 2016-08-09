@@ -40,85 +40,110 @@
   <!-- intro -->
   <div class="jumbotron text-center">    
       <h1>Ravi's Work Website</h1>
-        <h3>Welcome, this is my work site to display my projects and things I have learned from them. Enjoy!</h3>
+      <h3>Welcome, this is my work site to display my projects and things I have learned from them. Enjoy!</h3>
   </div>
 
   <!-- content sections -->
   <div class="row">
-    <div class="col-xs-12 col-sm-4">
-      <div class="posts">
-        <img src="images/comics.jpg" alt="..." class="img-responsive img-rounded">
-          <h3>Angular 2 Superheroes Tutorial</h3>
-          <p>This was my first time digging into Angular 2, learned a completely new way to think about front-end design using components and data binding. This was a tutorial from Angular 2's website. I did a little research/watched tutorials on Node.js and React.js and they all seem to use a similar component structure for front-end design.</p>
-          <p>
-            <a href="https://github.com/ravip0711/angular2-tour-of-heroes-tutorial" target="_blank" class="btn btn-default" role="button">Github</a>
-          </p>
+    <div id="grid columns" data-columns> 
+
+      <!-- Column #1 -->
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="panel panel-primary">
+          <img src="images/pizzabackground.jpg" alt="..." class="img-padding img-responsive center-block">
+          <div class="panel-heading"><h3>Pizza Server Shop Challenge</h3></div>
+          <div class="panel-body">
+            <p>This was a code challenge for a job that I spent a few days on. I had not coded with Rails in a few weeks so it was a great refresher for a basic CRUD app. Used Rspec for a few tests. With this app you can create pizzas by adding toppings to your pizza. You can also create new toppings. I would say the most challenging aspect with this app had to deal with nested resources and models and changing data that saves in the database. It took me awhile to make the checkboxes work for toppings while making a pizza, but also once a pizza is made, the toppings that were selected then automatically become saved in the pizza description. I had to format this to have commas inbetween the toppings. Also learned the importance of modifiying data to make it follow certain rules like making sure no matter what words in whatever case are typed, the end result saves and shows with capital letters.</p>
+            <p>
+              <a href="https://pizzaservershop.herokuapp.com" target="_blank" class="btn btn-primary" role="button">Website</a>
+              <a href="https://github.com/ravip0711/pizza_server_challenge" target="_blank" class="btn btn-default" role="button">Github</a>
+            </p>
+          </div>
+        </div>
+        <div class="panel panel-primary">
+          <img src="images/point.jpeg" alt="..." class="img-padding img-responsive center-block">
+          <div class="panel-heading"><h3>Loyalty Points</h3></div>
+          <div class="panel-body">
+            <p>Currently working on this app for creating a phone number based loyalty rewards system for customers to earn points/rewards at a retail business. Building the app via Test Driven Development with integration tests using Rspec and Capybara. Solidified more knowledge with routing. I am using bootstrap for the front-end. Did use the activeadmin gem, but later took it off because I wanted to learn and create a simplier admin dashboard. Additional features I am looking to build is an admin feature that allows admins to add points to the customer and for customer to use their earned points/rewards.</p>
+            <p>
+              <a href="https://loyalty-app.herokuapp.com/" target="_blank" class="btn btn-primary" role="button">Website</a>
+              <a href="https://github.com/ravip0711/loyalty" target="_blank" class="btn btn-default" role="button">Github</a>
+            </p>
+          </div>
+        </div>
+        <div class="panel panel-primary">
+          <img src="images/green_passage.jpeg" alt="..." class="img-padding img-responsive center-block">
+          <div class="panel-heading"><h3>Trail Head App</h3></div>
+          <div class="panel-body">
+            <p>My Dev Bootcamp Final 7 Day project in Rails - Trail Head is a hiking trail finder using Google Maps API and Trail API to give you hiking points all around the United States. Click on a trail to open up the specific trail's page giving you a chance to upload pictures and leave comments. Another feature that was developed was to be able to add new trail points to the map. Learned many things like how to build out a photo carousel and using carrier wave to upload pictures. Then being able to save the pictures to an Amazon S3 Server (finally without compromising the server key). Learned how to use CodeShip for continuous intergration/deployment to Heroku.</p>
+            <p>
+              <a href="http://trailheaddbc.herokuapp.com/" target="_blank" class="btn btn-primary" role="button">Website</a>
+              <a href="https://github.com/bobolinks-2014/trailhead" target="_blank" class="btn btn-default" role="button">Github</a>
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="col-xs-12 col-sm-4">
-      <div class="posts">
-        <img src="images/keyboardtyping.jpeg" alt="..." class="img-responsive img-rounded">
-          <h3>Fast Press</h3>
-          <p>Created a fun simple game using javascript and jQuery. Player 1 would hit "Q" on the keyboard to move forward and player 2 would hit "P" on the keyboard to move forward. First one with 10 boxes/moves wins! Figured out a way to reset the board once a player has been declared as a winner. One of the learning points was seeing how to design the code so that data gets passed correctly from function to function.</p>
-          <p>
-            <a href="https://github.com/ravip0711/fastpress" target="_blank" class="btn btn-default" role="button">Github</a>
-          </p>
+
+      <!-- Column #2 -->
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="panel panel-primary">
+          <img src="images/comics.jpg" alt="..." class="img-padding img-responsive center-block">
+          <div class="panel-heading"><h3>Angular 2 Superheroes Tutorial</h3></div>
+          <div class="panel-body">
+            <p>This was my first time digging into Angular 2, learned a completely new way to think about front-end design using components and data binding. This was a tutorial from Angular 2's website. I did a little research/watched tutorials on Node.js and React.js and they all seem to use a similar component structure for front-end design.</p>
+            <p>
+              <a href="https://github.com/ravip0711/angular2-tour-of-heroes-tutorial" target="_blank" class="btn btn-default" role="button">Github</a>
+            </p>
+          </div> 
+        </div>
+        <div class="panel panel-primary">
+          <img src="images/phone_picture.jpeg" alt="..." class="img-padding img-responsive center-block">
+          <div class="panel-heading"><h3>Photogram Tutorial</h3></div>
+          <div class="panel-body">
+            <p>Fun app project making a clone of Instagram. Learned how to use Test Driven Development with Rspec and Capybara, focusing on integration tests, to build out Instagram features. Learned how to use the Devise gem for authentication. Solidified knowledge regarding Rails back-end code placement. Learned how to manipulating the front-end with the bootstrap framework and use Sassy CSS. Also learned to AJAX and create a pagination with the Kaminari gem.</p>
+            <p>
+              <a href="https://github.com/ravip0711/photogram" target="_blank" class="btn btn-default" role="button">Github</a>
+            </p>
+          </div>
+        </div>
+        <div class="panel panel-primary">
+          <img src="images/store.jpeg" alt="..." class="img-padding img-responsive center-block">
+          <div class="panel-heading"><h3>Amozin App</h3></div>
+          <div class="panel-body">
+            <p>My Dev Bootcamp 5 day project in Rails - Amozin is a Amazon clone making it a basic e-commerce site with a few features: shopping carts, reviews, and user authentications. Learned a lot about sessions and use authentication.</p>
+            <p>
+              <a href="https://github.com/bobolinks-2014/Amozin" target="_blank" class="btn btn-default" role="button">Github</a>
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="col-xs-12 col-sm-4">
-      <div class="posts">
-        <img src="images/point.jpeg" alt="..." class="img-responsive img-rounded">
-          <h3>Loyalty Points</h3>
-          <p>Currently working on this app for creating a phone number based loyalty rewards system for customers to earn points/rewards at a retail business. Building the app via Test Driven Development with integration tests using Rspec and Capybara. Solidified more knowledge with routing. I am using bootstrap for the front-end. Did use the activeadmin gem, but later took it off because I wanted to learn and create a simplier admin dashboard. Additional features I am looking to build is an admin feature that allows admins to add points to the customer and for customer to use their earned points/rewards.</p>
-          <p>
-            <a href="https://loyalty-app.herokuapp.com/" target="_blank" class="btn btn-primary" role="button">Website</a>
-            <a href="https://github.com/ravip0711/loyalty" target="_blank" class="btn btn-default" role="button">Github</a>
-          </p>
-      </div>
-    </div>
-    <div class="col-xs-12 col-sm-4">
-      <div class="posts">
-        <img src="images/phone_picture.jpeg" alt="..." class="img-responsive img-rounded">
-          <h3>Photogram Tutorial</h3>
-          <p>Fun app project making a clone of Instagram. Learned how to use Test Driven Development with Rspec and Capybara, focusing on integration tests, to build out Instagram features. Learned how to use the Devise gem for authentication. Solidified knowledge regarding Rails back-end code placement. Learned how to manipulating the front-end with the bootstrap framework and use Sassy CSS. Also learned to AJAX and create a pagination with the Kaminari gem.</p>
-          <p>
-            <a href="https://github.com/ravip0711/photogram" target="_blank" class="btn btn-default" role="button">Github</a>
-          </p>
-      </div>
-    </div>
-    <div class="col-xs-12 col-sm-4">
-      <div class="posts">
-        <img src="images/kitten.jpeg" alt="..." class="img-responsive img-rounded">
-          <h3>Kittens App Tutorial</h3>
-          <p>Created a basic CRUD App in Rails, then learned how to use the Flickr API to get pictures from my own Flickr profile and more importantly kittens.</p>
-          <p>
-            <a href="https://github.com/ravip0711/kittens_app" target="_blank" class="btn btn-default" role="button">Github</a>
-          </p>
-      </div>
-    </div>
-    <div class="col-xs-12 col-sm-4">
-      <div class="posts">
-        <img src="images/green_passage.jpeg" alt="..." class="img-responsive img-rounded">
-          <h3>Trail Head App</h3>
-          <p>My Dev Bootcamp Final 7 Day project in Rails - Trail Head is a hiking trail finder using Google Maps API and Trail API to give you hiking points all around the United States. Click on a trail to open up the specific trail's page giving you a chance to upload pictures and leave comments. Another feature that was developed was to be able to add new trail points to the map. Learned many things like how to build out a photo carousel and using carrier wave to upload pictures. Then being able to save the pictures to an Amazon S3 Server (finally without compromising the server key). Learned how to use CodeShip for continuous intergration/deployment to Heroku.</p>
-           <p>
-            <a href="http://trailheaddbc.herokuapp.com/" target="_blank" class="btn btn-primary" role="button">Website</a>
-            <a href="https://github.com/bobolinks-2014/trailhead" target="_blank" class="btn btn-default" role="button">Github</a>
-          </p>
-      </div>
-    </div>
-    <div class="col-xs-12 col-sm-4">
-      <div class="posts">
-        <img src="images/store.jpeg" alt="..." class="img-responsive img-rounded">
-          <h3>Amozin App</h3>
-          <p>My Dev Bootcamp 5 day project in Rails - Amozin is a Amazon clone making it a basic e-commerce site with a few features: shopping carts, reviews, and user authentications. Learned a lot about sessions and use authentication.</p>
-           <p>
-            <a href="https://github.com/bobolinks-2014/Amozin" target="_blank" class="btn btn-default" role="button">Github</a>
-          </p>
+
+      <!-- Column #3 -->
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="panel panel-primary">
+        <img src="images/keyboardtyping.jpeg" alt="..." class="img-padding img-responsive center-block">
+          <div class="panel-heading"><h3>Fast Press</h3></div>
+          <div class="panel-body">
+            <p>Created a fun simple game using javascript and jQuery. Player 1 would hit "Q" on the keyboard to move forward and player 2 would hit "P" on the keyboard to move forward. First one with 10 boxes/moves wins! Figured out a way to reset the board once a player has been declared as a winner. One of the learning points was seeing how to design the code so that data gets passed correctly from function to function.</p>
+            <p>
+              <a href="https://github.com/ravip0711/fastpress" target="_blank" class="btn btn-default" role="button">Github</a>
+            </p>
+          </div> 
+        </div>
+        <div class="panel panel-primary">
+          <img src="images/kitten.jpeg" alt="..." class="img-padding img-responsive center-block">
+          <div class="panel-heading"><h3>Kittens App Tutorial</h3></div>
+          <div class="panel-body">
+            <p>Created a basic CRUD App in Rails, then learned how to use the Flickr API to get pictures from my own Flickr profile and more importantly kittens.</p>
+            <p>
+              <a href="https://github.com/ravip0711/kittens_app" target="_blank" class="btn btn-default" role="button">Github</a>
+            </p>
+          </div> 
+        </div>
       </div>
     </div>
   </div>
-  
+
   <!-- footer -->
   <footer id="footer" class="navbar">
     <div class="container">
@@ -138,6 +163,5 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="js/bootstrap.min.js"></script>
-  <script src="js/custom.js"></script>
 </body>
 </html>
